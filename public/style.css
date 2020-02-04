@@ -33,15 +33,38 @@
     box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.1);
 }
 
-.carousel-item {
-    height: 100vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+header.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    position: relative;
     background-size: cover;
 }
+
+header.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #606060;
+    opacity: 0.5;
+}
+
+header.masthead .mast-heading {
+    padding: 200px 0 150px;
+    color: white;
+    text-align: center;
+}
+
+header.masthead .post-heading {
+    padding: 150px 0 100px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
 
 
 
