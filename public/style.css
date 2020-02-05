@@ -37,6 +37,7 @@ header.masthead {
     margin-bottom: 30px;
     background: no-repeat center center;
     position: relative;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -50,17 +51,22 @@ header.masthead .overlay {
     opacity: 0.5;
 }
 
-header.masthead .mast-heading {
+header.masthead .mast-heading,
+header.masthead .post-heading {
     padding: 200px 0 150px;
     color: white;
+}
+
+header.masthead .mast-heading,
+header.masthead .post-heading {
     text-align: center;
 }
 
-header.masthead .post-heading {
-    padding: 150px 0 100px;
-    text-align: center;
-    color: white;
-}
+
+
+
+
+
 
 
 
