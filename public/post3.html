@@ -64,7 +64,12 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <button type="button" style="margin-left: 400px" class="btn btn-outline-primary"><i class="fa fa-newspaper"></i> Create</button>
                     <button type="button" style="margin-left: 10px" class="btn btn-outline-primary"><i class="fa fa-edit"></i> Edit</button>
-                    <button type="button" style="margin-left: 10px" class="btn btn-outline-primary"><i class="fa fa-trash"></i> Delete</button>
+                    <button type="button" style="margin-left: 10px" class="btn btn-outline-primary" onclick="myFunction()"><i class="fa fa-trash"></i> Delete</button>
+                    <script>
+                        function myFunction() {
+                            alert("Cannot be deleted now!");
+                        }
+                    </script>
                     <a href="#"><img src="image/hello.jpeg" alt="Hello" style="margin-top: 30px; margin-bottom: 20px" width="700" height="450"></a>
                     <hr>
                     <h4>Hello, my WebLife!</h4>
