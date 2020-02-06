@@ -29,9 +29,8 @@
 
 header.masthead {
     margin-bottom: 30px;
-    background: no-repeat center center;
+    background: no-repeat center center scroll;
     position: relative;
-    background-attachment: fixed;
     background-size: cover;
 }
 

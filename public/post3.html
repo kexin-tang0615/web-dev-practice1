@@ -8,7 +8,7 @@
 </head>
 <body>
 <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="home.html">
                 <img src="image/blog.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -18,25 +18,23 @@
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i>Search</button>
             </form>
-
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Home
+                        <a class="nav-link" href="home.html"><i class="fa fa-home"></i>Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" href="#"><i class="fa fa-user-circle"></i>Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Logout</a>
+                        <a class="nav-link" href="index.html">Logout <i class="fa fa-sign-out-alt"></i></a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -59,17 +57,17 @@
 
 <!-- Post Content -->
     <article>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    <button type="button" style="text-align: left" class="btn btn-outline-primary"><i class="fa fa-newspaper"></i> Create</button>
-                    <button type="button" style="text-align: center" class="btn btn-outline-primary"><i class="fa fa-edit"></i> Edit</button>
-                    <button type="button" style="text-align: right" class="btn btn-outline-primary" onclick="myFunction()"><i class="fa fa-trash"></i> Delete</button>
+                    <a onclick="myFunction()" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-trash"></i> Trash</a>
                     <script>
                         function myFunction() {
                             alert("Cannot be deleted now!");
                         }
                     </script>
+                    <a href="#" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-edit"></i> Edit</a>
+                    <a href="#" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-plus-square"></i> Create</a>
                     <a href="#"><img src="image/hello.jpeg" alt="Hello" style="margin-top: 30px; margin-bottom: 20px" width="700" height="450"></a>
                     <hr>
                     <h4>Hello, my WebLife!</h4>
@@ -77,15 +75,14 @@
                 </div>
             </div>
         </div>
-
         <form>
             <div class = container>
                 <div class="form-group">
-                    <label for="comment" style="margin-left: 150px">Comment:</label>
-                    <textarea class="form-control" id="comment" rows="5" style="width: 780px; margin-left: 150px"></textarea>
+                    <label for="comment">Comment <i class="fa fa-comment-alt"></i></label>
+                    <textarea class="form-control" id="comment" rows="5"></textarea>
                 </div>
                 <div>
-                    <a class="btn btn-primary" style="margin-left: 855px" href="#">Submit</a>
+                    <a class="btn btn-primary float-right" href="#">Submit</a>
                 </div>
             </div>
         </form>

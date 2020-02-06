@@ -8,7 +8,7 @@
 </head>
 <body>
 <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="home.html">
                 <img src="image/blog.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -18,25 +18,23 @@
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i>Search</button>
             </form>
-
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Home
+                        <a class="nav-link" href="home.html"><i class="fa fa-home"></i>Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" href="#"><i class="fa fa-user-circle"></i>Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Logout</a>
+                        <a class="nav-link" href="index.html">Logout <i class="fa fa-sign-out-alt"></i></a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -57,9 +55,9 @@
     </header>
 
 <!-- Post Content -->
-    <div class="container">
+    <div class="container-fluid">
         <div style="text-align: right">
-            <button type="button" class="btn btn-primary"><i class="fa fa-newspaper"></i> Create</button>
+            <a href="#" class="btn btn-primary active" role="button" aria-pressed="true"><i class="fa fa-plus-square"></i> Create</a>
         </div>
         <br>
         <div class="row">
@@ -68,13 +66,13 @@
                     <a href="post1.html" style="display: inline-block">
                         <h4>Happy Birthday Quotes</h4>
                     </a>
-                    <button style="float: right" class="btn" type="submit" onclick="myFunction()"><i class="fa fa-trash"></i> Delete</button>
+                    <a onclick="myFunction()" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-trash"></i> Delete</a>
                     <script>
                         function myFunction() {
                             alert("Cannot be deleted now!");
                         }
                     </script>
-                    <button style="float: right" class="btn" type="submit" onclick="location.href='post1.html'"><i class="fa fa-edit"></i> Edit</button>
+                    <a href="post1.html" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-edit"></i> Edit</a>
                     <h6>Posted on February 02, 2020 by Kexin Tang</h6>
                 </div>
                 <hr>
@@ -82,13 +80,8 @@
                     <a href="post2.html" style="display: inline-block">
                         <h4>Welcome To New York</h4>
                     </a>
-                    <button style="float: right" class="btn" type="submit" onclick="myFunction()"><i class="fa fa-trash"></i> Delete</button>
-                    <script>
-                        function myFunction() {
-                            alert("Cannot be deleted now!");
-                        }
-                    </script>
-                    <button style="float: right" class="btn" type="submit" onclick="location.href='post2.html'"><i class="fa fa-edit"></i> Edit</button>
+                    <a onclick="myFunction()" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-trash"></i> Delete</a>
+                    <a href="post2.html" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-edit"></i> Edit</a>
                     <h6>Posted on February 01, 2020 by Kexin Tang</h6>
                 </div>
                 <hr>
@@ -96,13 +89,8 @@
                     <a href="post3.html" style="display: inline-block">
                         <h4>Hello, Weblife!</h4>
                     </a>
-                    <button style="float: right" class="btn" type="submit" onclick="myFunction()"><i class="fa fa-trash"></i> Delete</button>
-                    <script>
-                        function myFunction() {
-                            alert("Cannot be deleted now!");
-                        }
-                    </script>
-                    <button style="float: right" class="btn" type="submit" onclick="location.href='post3.html'"><i class="fa fa-edit"></i> Edit</button>
+                    <a onclick="myFunction()" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-trash"></i> Delete</a>
+                    <a href="post3.html" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-edit"></i> Edit</a>
                     <h6>Posted on January 01, 2020 by Kexin Tang</h6>
                 </div>
                 <hr>

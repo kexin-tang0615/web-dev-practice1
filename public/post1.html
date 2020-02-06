@@ -8,7 +8,7 @@
 </head>
 <body>
 <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="home.html">
                 <img src="image/blog.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -18,25 +18,23 @@
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i>Search</button>
             </form>
-
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Home
+                        <a class="nav-link" href="home.html"><i class="fa fa-home"></i>Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" href="#"><i class="fa fa-user-circle"></i>Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Logout</a>
+                        <a class="nav-link" href="index.html">Logout <i class="fa fa-sign-out-alt"></i></a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -59,17 +57,17 @@
 
 <!-- Post Content -->
     <article>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    <button type="button" style="text-align: left" class="btn btn-outline-primary"><i class="fa fa-newspaper"></i> Create</button>
-                    <button type="button" style="text-align: center" class="btn btn-outline-primary"><i class="fa fa-edit"></i> Edit</button>
-                    <button type="button" style="text-align: right" class="btn btn-outline-primary" onclick="myFunction()"><i class="fa fa-trash"></i> Delete</button>
+                    <a onclick="myFunction()" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-trash"></i> Trash</a>
                     <script>
                         function myFunction() {
                             alert("Cannot be deleted now!");
                         }
                     </script>
+                    <a href="#" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-edit"></i> Edit</a>
+                    <a href="#" class="btn active" style="float: right" role="button" aria-pressed="true"><i class="fa fa-plus-square"></i> Create</a>
                     <iframe style="margin-top: 30px; margin-bottom: 20px" width="700" height="450" src="https://www.youtube.com/embed/QaR31V5xBQ8"></iframe>
                     <p>Sending birthday greetings has become a necessary tradition these days. It can be hard to find the perfect birthday wish for the special birthday boy or girl especially, with so many options. Don not stress out over what to write in a birthday card.  Make the next birthday you celebrate a special one and personalize your birthday invitations with a handpicked happy birthday quote. Whether you’re looking for a greeting to make someone roll over laughing or a heart-warming tearjerker, these birthday quotes are a great place to start. A genuine birthday wish will surely make anyone’s day. This year, say “Happy Birthday!” with a few words that no one will forget.</p>
                     <h4>50 Birthday Quotes For Your Mother, Father, Son And Daughter</h4>
@@ -85,15 +83,14 @@
                         <li>Happy birthday! Your life is just about to pick up speed and blast off into the stratosphere. Wear a seat belt and be sure to enjoy the journey. Happy birthday!</li>
                     </ul>
                     <p>These birthday quotes are a great place to start, but don’t think you have to stick with only what’s written here. Personalize the sentiment even more with an inside joke or special moment between you and the birthday boy or girl. Sending a heartfelt birthday card with the right intentions can make all of the difference on someone’s big day. Make them feel special with the simplest birthday wish from you! Also, before you go, don’t feel limited to just using these birthday quotes for cards. You can print them on décor pieces and hang them around the party, use them on birthday party invitations or however you’d like. Get ready to celebrate!</p>
-                    <p> <a class="btn btn-primary float-right" href="https://www.shutterfly.com/ideas/happy-birthday-quotes/">Read the whole article &rarr;</a></p>
+                    <p> <a class="btn btn-primary float-right" href="https://www.shutterfly.com/ideas/happy-birthday-quotes/">Read the whole article <i class="fa fa-link"></i></a></p>
                 </div>
             </div>
         </div>
-
         <form>
         <div class = container>
             <div class="form-group">
-                <label for="comment">Comment:</label>
+                <label for="comment">Comment <i class="fa fa-comment-alt"></i></label>
                 <textarea class="form-control" id="comment" rows="5"></textarea>
             </div>
             <div>
